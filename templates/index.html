@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h1>Notes</h1>
+    <form action="/notes/" method="post">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="content" placeholder="Content" required></textarea>
+        <input type="submit" value="Create Note">
+    </form>
+
+    <h2>All Notes</h2>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.title }}: {{ note.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
