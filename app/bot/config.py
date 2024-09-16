@@ -1,5 +1,5 @@
 # app/bot/config.py
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     bot_token: str

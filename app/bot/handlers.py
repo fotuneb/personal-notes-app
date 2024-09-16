@@ -1,6 +1,6 @@
 # app/bot/handlers.py
 from aiogram import types
-from aiogram.dispatcher import Dispatcher
+from aiogram import Dispatcher
 from app.bot.api import register_user, get_token, get_notes, create_note, search_notes
 
 # app/bot/handlers.py
